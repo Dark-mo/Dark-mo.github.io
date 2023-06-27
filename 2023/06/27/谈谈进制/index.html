@@ -19,23 +19,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.17.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Dark-mo">
-<meta property="og:url" content="http://example.com/index.html">
+    <meta name="description" content="注意本文讨论的都是正整数(负数同理) 什么是进制其实就是一种计数方式，几进制就是逢几进一。例如八进制就是逢八进一。     十进制 八进制     7 7   8 10   18 22   70 106     可见八进制中单位从右往左依次是  什么是进制的连续性和唯一性这其实是我自己起的名，有没有这个概念，有的话叫什么名我也不知道 12连续性：某一确定进制所能表示的数是连续的（即任何一个数在某一">
+<meta property="og:type" content="article">
+<meta property="og:title" content="谈谈进制">
+<meta property="og:url" content="http://example.com/2023/06/27/%E8%B0%88%E8%B0%88%E8%BF%9B%E5%88%B6/index.html">
 <meta property="og:site_name" content="Dark-mo">
+<meta property="og:description" content="注意本文讨论的都是正整数(负数同理) 什么是进制其实就是一种计数方式，几进制就是逢几进一。例如八进制就是逢八进一。     十进制 八进制     7 7   8 10   18 22   70 106     可见八进制中单位从右往左依次是  什么是进制的连续性和唯一性这其实是我自己起的名，有没有这个概念，有的话叫什么名我也不知道 12连续性：某一确定进制所能表示的数是连续的（即任何一个数在某一">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-06-27T03:23:59.000Z">
+<meta property="article:modified_time" content="2023-06-27T04:09:32.454Z">
 <meta property="article:author" content="mo">
+<meta property="article:tag" content="数学">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2023/06/27/%E8%B0%88%E8%B0%88%E8%BF%9B%E5%88%B6/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2023/06/27/%E8%B0%88%E8%B0%88%E8%BF%9B%E5%88%B6/","path":"2023/06/27/谈谈进制/","title":"谈谈进制"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Dark-mo</title>
+<title>谈谈进制 | Dark-mo</title>
   
 
 
@@ -180,7 +185,7 @@ mjx-container[display="true"] + br {
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Dark-mo</h1>
+      <p class="site-title">Dark-mo</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -233,7 +238,7 @@ mjx-container[display="true"] + br {
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -246,6 +251,7 @@ mjx-container[display="true"] + br {
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%BF%9B%E5%88%B6"><span class="nav-number">1.</span> <span class="nav-text">什么是进制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7%E5%92%8C%E5%94%AF%E4%B8%80%E6%80%A7"><span class="nav-number">2.</span> <span class="nav-text">什么是进制的连续性和唯一性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A3%E6%96%87"><span class="nav-number">3.</span> <span class="nav-text">正文</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%87%8D%E7%82%B9%E6%9D%A5%E4%BA%86"><span class="nav-number">3.1.</span> <span class="nav-text">重点来了</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9E%E7%BB%AD%E6%80%A7%E8%AF%81%E6%98%8E"><span class="nav-number">3.2.</span> <span class="nav-text">连续性证明</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%94%AF%E4%B8%80%E6%80%A7%E8%AF%81%E6%98%8E"><span class="nav-number">4.</span> <span class="nav-text">唯一性证明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%8C%E6%88%90"><span class="nav-number">5.</span> <span class="nav-text">完成</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -279,16 +285,17 @@ mjx-container[display="true"] + br {
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2023/06/27/%E8%B0%88%E8%B0%88%E8%BF%9B%E5%88%B6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -302,13 +309,13 @@ mjx-container[display="true"] + br {
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Dark-mo">
+      <meta itemprop="name" content="谈谈进制 | Dark-mo">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/06/27/%E8%B0%88%E8%B0%88%E8%BF%9B%E5%88%B6/" class="post-title-link" itemprop="url">谈谈进制</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          谈谈进制
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -331,8 +338,7 @@ mjx-container[display="true"] + br {
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <p><u><strong>注意本文讨论的都是正整数(负数同理)</strong></u></p>
+    <div class="post-body" itemprop="articleBody"><p><u><strong>注意本文讨论的都是正整数(负数同理)</strong></u></p>
 <h2 id="什么是进制"><a href="#什么是进制" class="headerlink" title="什么是进制"></a>什么是进制</h2><p>其实就是一种计数方式，几进制就是逢几进一。例如八进制就是逢八进一。</p>
 <div class="table-container">
 <table>
@@ -390,7 +396,6 @@ mjx-container[display="true"] + br {
 <p><em><u><strong>所以一个数在某一确定进制中仅有一种表达方式</strong></u></em></p>
 <h2 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h2><p>若有错误,欢迎指正</p>
 
-      
     </div>
 
     
@@ -398,159 +403,25 @@ mjx-container[display="true"] + br {
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          <div class="post-tags">
+              <a href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag"># 数学</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/06/26/%E8%B4%AA%E5%90%83%E8%9B%87-c/" rel="prev" title="贪吃蛇 c++">
+                  <i class="fa fa-chevron-left"></i> 贪吃蛇 c++
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/06/26/%E8%B4%AA%E5%90%83%E8%9B%87-c/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="mo">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dark-mo">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Dark-mo">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/06/26/%E8%B4%AA%E5%90%83%E8%9B%87-c/" class="post-title-link" itemprop="url">贪吃蛇 c++</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2023-06-26 22:30:38 / 修改时间：22:56:17" itemprop="dateCreated datePublished" datetime="2023-06-26T22:30:38+08:00">2023-06-26</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>最近翻代码时发现了这个学编程没多久时自己写的贪吃蛇，不得不说我当时真有耐心<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;windows.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;conio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> mmap[<span class="number">205</span>][<span class="number">205</span>], flag = <span class="number">1</span>, sn[<span class="number">50000</span>][<span class="number">2</span>] = &#123;&#123;<span class="number">0</span>, <span class="number">0</span>&#125;, &#123;<span class="number">10</span>, <span class="number">9</span>&#125;, &#123;<span class="number">10</span>, <span class="number">10</span>&#125;, &#123;<span class="number">10</span>, <span class="number">11</span>&#125;&#125;, lon = <span class="number">3</span>, ind = <span class="number">2</span>, dir[<span class="number">4</span>][<span class="number">2</span>] = &#123;<span class="number">0</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">-1</span>, <span class="number">-1</span>, <span class="number">0</span>&#125;, kbnum, xx, yy, add, eat = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">move</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(!add)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i = lon; i &gt;= <span class="number">2</span>; i--)&#123;</span><br><span class="line">			sn[i][<span class="number">0</span>] = sn[i - <span class="number">1</span>][<span class="number">0</span>];</span><br><span class="line">			sn[i][<span class="number">1</span>] = sn[i - <span class="number">1</span>][<span class="number">1</span>];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i = lon; i &gt;= <span class="number">1</span>; i--)&#123;</span><br><span class="line">			sn[i + <span class="number">1</span>][<span class="number">0</span>] = sn[i][<span class="number">0</span>];</span><br><span class="line">			sn[i + <span class="number">1</span>][<span class="number">1</span>] = sn[i][<span class="number">1</span>];</span><br><span class="line">		&#125;</span><br><span class="line">		sn[<span class="number">1</span>][<span class="number">0</span>] = xx;</span><br><span class="line">		sn[<span class="number">1</span>][<span class="number">1</span>] = yy;</span><br><span class="line">		lon++;</span><br><span class="line">		eat = <span class="number">1</span>;</span><br><span class="line">		add = <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	sn[<span class="number">1</span>][<span class="number">0</span>] += dir[ind][<span class="number">0</span>];</span><br><span class="line">	sn[<span class="number">1</span>][<span class="number">1</span>] += dir[ind][<span class="number">1</span>];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">draw</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">2</span>; i &lt; <span class="number">20</span>; i++)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">2</span>; j &lt; <span class="number">20</span>; j++)&#123;</span><br><span class="line">			<span class="keyword">if</span>(mmap[i][j] != <span class="number">4</span>)&#123;</span><br><span class="line">				mmap[i][j] = <span class="number">0</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">20</span>; i++)&#123;</span><br><span class="line">		mmap[i][<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">		mmap[i][<span class="number">20</span>] = <span class="number">1</span>;</span><br><span class="line">		mmap[<span class="number">1</span>][i] = <span class="number">1</span>;</span><br><span class="line">		mmap[<span class="number">20</span>][i] = <span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = lon; i &gt;= <span class="number">2</span>; i--)&#123;</span><br><span class="line">		mmap[sn[i][<span class="number">0</span>]][sn[i][<span class="number">1</span>]] = <span class="number">2</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span>(mmap[sn[<span class="number">1</span>][<span class="number">0</span>]][sn[<span class="number">1</span>][<span class="number">1</span>]] == <span class="number">4</span>)&#123;</span><br><span class="line">		add = <span class="number">1</span>;</span><br><span class="line">	&#125;<span class="keyword">else</span> <span class="keyword">if</span>(mmap[sn[<span class="number">1</span>][<span class="number">0</span>]][sn[<span class="number">1</span>][<span class="number">1</span>]] != <span class="number">0</span>)&#123;</span><br><span class="line">		flag = <span class="number">-1</span>;</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	mmap[sn[<span class="number">1</span>][<span class="number">0</span>]][sn[<span class="number">1</span>][<span class="number">1</span>]] = <span class="number">3</span>;</span><br><span class="line">	<span class="keyword">if</span>(eat)&#123;</span><br><span class="line">		<span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">	        xx = <span class="built_in">rand</span>() % <span class="number">18</span> + <span class="number">2</span>;</span><br><span class="line">			yy = <span class="built_in">rand</span>() % <span class="number">18</span> + <span class="number">2</span>;</span><br><span class="line">			<span class="keyword">if</span>(!mmap[xx][yy])&#123;</span><br><span class="line">				mmap[xx][yy] = <span class="number">4</span>;</span><br><span class="line">				eat = <span class="number">0</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;	</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">output</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">20</span>; i++)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">1</span>; j &lt;= <span class="number">20</span>; j++)&#123;</span><br><span class="line">			<span class="keyword">if</span>(mmap[i][j] == <span class="number">2</span>)&#123;</span><br><span class="line">				cout &lt;&lt; <span class="string">&quot;*&quot;</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span>(!mmap[i][j])&#123;</span><br><span class="line">				cout &lt;&lt; <span class="string">&quot;.&quot;</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span>(mmap[i][j] == <span class="number">1</span>)&#123;</span><br><span class="line">				cout &lt;&lt; <span class="string">&quot;@&quot;</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span>(mmap[i][j] == <span class="number">3</span>)&#123;</span><br><span class="line">				cout &lt;&lt; <span class="string">&quot;#&quot;</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span>(mmap[i][j] == <span class="number">4</span>)&#123;</span><br><span class="line">				cout &lt;&lt; <span class="string">&quot;$&quot;</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			cout &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		cout &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">while</span>(flag != <span class="number">-1</span>)&#123;</span><br><span class="line">		<span class="built_in">system</span>(<span class="string">&quot;cls&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span>(_kbhit())&#123;</span><br><span class="line">            kbnum = _getch();</span><br><span class="line">            <span class="keyword">if</span>(kbnum == <span class="number">119</span>)&#123;</span><br><span class="line">                ind = <span class="number">3</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span>(kbnum == <span class="number">115</span>)&#123;</span><br><span class="line">                ind = <span class="number">1</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span>(kbnum == <span class="number">97</span>)&#123;</span><br><span class="line">                ind = <span class="number">2</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span>(kbnum == <span class="number">100</span>)&#123;</span><br><span class="line">                ind = <span class="number">0</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">		<span class="built_in">move</span>();</span><br><span class="line">		<span class="built_in">draw</span>();</span><br><span class="line">		<span class="built_in">output</span>();</span><br><span class="line">		<span class="built_in">Sleep</span>(<span class="number">300</span>); <span class="comment">//usleep(500000);</span></span><br><span class="line">	&#125;</span><br><span class="line">	cout &lt;&lt;<span class="string">&quot;	 Game Over!&quot;</span> &lt;&lt; endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>wsad分别是上下左右，这代码如今看来写的<del>惨不忍睹</del>其实还好</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/06/26/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="mo">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dark-mo">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Dark-mo">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/06/26/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2023-06-26 20:26:34" itemprop="dateCreated datePublished" datetime="2023-06-26T20:26:34+08:00">2023-06-26</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
 
 
 
