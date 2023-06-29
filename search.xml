@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>海伦-秦九韶公式的证明（初中版）</title>
+      <link href="/2023/06/28/%E6%B5%B7%E4%BC%A6-%E7%A7%A6%E4%B9%9D%E9%9F%B6%E5%85%AC%E5%BC%8F%E7%9A%84%E8%AF%81%E6%98%8E%EF%BC%88%E5%88%9D%E4%B8%AD%E7%89%88%EF%BC%89/"/>
+      <url>/2023/06/28/%E6%B5%B7%E4%BC%A6-%E7%A7%A6%E4%B9%9D%E9%9F%B6%E5%85%AC%E5%BC%8F%E7%9A%84%E8%AF%81%E6%98%8E%EF%BC%88%E5%88%9D%E4%B8%AD%E7%89%88%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<p>海伦-秦九韶公式是一个非常有趣的公式，可以通过三角形的三条边求出三角形的面积，在我学的初中课本中虽然有提到但没有证明方法。现在我就写一下我初中写的证明方法</p><h2 id="构造图形"><a href="#构造图形" class="headerlink" title="构造图形"></a>构造图形</h2><p>首先，我们需要画一个三角形ABC，设A点的对边是a，B点的对边是b，C点的对边是c<br><img src="/images/海伦公式/1.png" alt=""></p><h2 id="证明余弦定理"><a href="#证明余弦定理" class="headerlink" title="证明余弦定理"></a>证明余弦定理</h2><p>过A作AH⊥BC于H,设BH为d</p><p>因为 $BC=a,BH=d$</p><p>所以 $CH=BC-BH=a-d$</p><p>因为 $AB^2=BH^2+AH^2$</p><p>所以 $AH^2=AB^2-BH^2=c^2-d^2$,</p><p>因为 $CH^2=(a-d)^2=a^2-2ad+d^2$</p><p>所以 $b^2=AC^2=AH^2+CH^2=c^2-d^2+a^2-2ad+d^2=a^2+c^2-2ad$</p><p>因为 AH⊥BC</p><p>所以 ∠AHB = 90°</p><p>所以 cosB = $\frac{BH}{AB}$</p><p>所以 d = BH = AB <em> cosB = c </em> cosB</p><p>所以 $b^2=a^2+c^2-2ad=a^2+c^2-2ac*cosB$</p><p>所以 $b^2=a^2+c^2-2ac*cosB$</p><p><img src="/images/海伦公式/2.png" alt=""></p><h2 id="证明海伦-秦九韶公式"><a href="#证明海伦-秦九韶公式" class="headerlink" title="证明海伦-秦九韶公式"></a>证明海伦-秦九韶公式</h2><p>因为余弦定理可知在三角形ABC中已知abc可求cosB</p><p>即 cosB = $\frac{a^2+c^2-b^2}{2ac}$</p><p>又因为 $sin^2B+cos^2B=1$</p><p>所以 $sin^2B=1-\frac{(a^2+c^2-b^2)^2}{4a^2c^2}$</p><p>所以 $AH^2 = c^2sin^2B=c^2-\frac{(a^2+c^2-b^2)^2}{4a^2}=\frac{4a^2c^2-(a^2+c^2-b^2)^2}{4a^2}=\frac{(2ac)^2-(a^2+c^2-b^2)^2}{4a^2}=\frac{(2ac+a^2+c^2-b^2)(2ac-a^2-c^2+b^2)}{4a^2}=\frac{[(a+c)^2-b^2][b^2-(a-c)^2]}{4a^2}=\frac{(a+b+c)(a-b+c)(a+b-c)(-a+b+c)}{4a^2}$</p><p>所以 $AH=\sqrt{\frac{(a+b+c)(a-b+c)(a+b-c)(-a+b+c)}{4a^2}}$</p><p>所以 $三角形ABC的面积=\frac{1}{2}aAH=\sqrt{\frac{a^2}{4}}\sqrt{\frac{(a+b+c)(a-b+c)(a+b-c)(-a+b+c)}{4a^2}}=\sqrt{\frac{(a+b+c)(a-b+c)(a+b-c)(-a+b+c)}{16}}=\sqrt{\frac{a+b+c}{2}\frac{a-b+c}{2}\frac{a+b-c}{2}\frac{-a+b+c}{2}}=\sqrt{\frac{a+b+c}{2}\frac{(a+b+c)-2b}{2}\frac{(a+b+c)-2c}{2}\frac{(a+b+c)-2a}{2}}=\sqrt{\frac{a+b+c}{2}(\frac{a+b+c}{2}-a)(\frac{a+b+c}{2}-b)(\frac{a+b+c}{2}-c)}$</p><p>设 $p=\frac{a+b+c}{2}$</p><p>所以 $三角形ABC的面积=\sqrt{p(p-a)(p-b)(p-c)}$</p><p><img src="/images/海伦公式/2.png" alt=""></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 数学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>谈谈进制</title>
       <link href="/2023/06/27/%E8%B0%88%E8%B0%88%E8%BF%9B%E5%88%B6/"/>
       <url>/2023/06/27/%E8%B0%88%E8%B0%88%E8%BF%9B%E5%88%B6/</url>
