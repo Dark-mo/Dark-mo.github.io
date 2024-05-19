@@ -19,29 +19,40 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"dark-mo.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.17.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-1}},"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="在了解复数之前，我们最好对复数的起源之处，即一元三次方程的求根公式有所了解。查找了大量资料后，我找到了下面这个视频。    视频转载于 : https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1nE411R72b">
+    <meta name="description" content="题目：一个圆柱，按如图所示的方式切割，下半部分几合体的侧面展开图是什么？">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一元三次方程的解法">
-<meta property="og:url" content="https://dark-mo.github.io/2024/03/30/%E4%B8%80%E5%85%83%E4%B8%89%E6%AC%A1%E6%96%B9%E7%A8%8B%E7%9A%84%E8%A7%A3%E6%B3%95/index.html">
+<meta property="og:title" content="一种侧面展开图求法">
+<meta property="og:url" content="https://dark-mo.github.io/2024/05/19/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/index.html">
 <meta property="og:site_name" content="Dark-mo">
-<meta property="og:description" content="在了解复数之前，我们最好对复数的起源之处，即一元三次方程的求根公式有所了解。查找了大量资料后，我找到了下面这个视频。    视频转载于 : https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1nE411R72b">
+<meta property="og:description" content="题目：一个圆柱，按如图所示的方式切割，下半部分几合体的侧面展开图是什么？">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-03-30T14:54:52.000Z">
-<meta property="article:modified_time" content="2024-05-19T15:42:50.735Z">
+<meta property="og:image" content="https://dark-mo.github.io/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/1.png">
+<meta property="og:image" content="https://dark-mo.github.io/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/1.png">
+<meta property="og:image" content="https://dark-mo.github.io/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/2.png">
+<meta property="og:image" content="https://dark-mo.github.io/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/3.png">
+<meta property="og:image" content="https://dark-mo.github.io/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/4.png">
+<meta property="og:image" content="https://dark-mo.github.io/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/3.png">
+<meta property="og:image" content="https://dark-mo.github.io/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/5.png">
+<meta property="og:image" content="https://dark-mo.github.io/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/6.png">
+<meta property="og:image" content="https://dark-mo.github.io/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/5.png">
+<meta property="article:published_time" content="2024-05-19T15:40:58.000Z">
+<meta property="article:modified_time" content="2024-05-19T15:45:06.304Z">
 <meta property="article:author" content="赵子墨">
 <meta property="article:tag" content="数学">
-<meta property="article:tag" content="方程">
+<meta property="article:tag" content="立体几何">
+<meta property="article:tag" content="解析几何">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://dark-mo.github.io/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/1.png">
 
 
-<link rel="canonical" href="https://dark-mo.github.io/2024/03/30/%E4%B8%80%E5%85%83%E4%B8%89%E6%AC%A1%E6%96%B9%E7%A8%8B%E7%9A%84%E8%A7%A3%E6%B3%95/">
+<link rel="canonical" href="https://dark-mo.github.io/2024/05/19/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://dark-mo.github.io/2024/03/30/%E4%B8%80%E5%85%83%E4%B8%89%E6%AC%A1%E6%96%B9%E7%A8%8B%E7%9A%84%E8%A7%A3%E6%B3%95/","path":"2024/03/30/一元三次方程的解法/","title":"一元三次方程的解法"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://dark-mo.github.io/2024/05/19/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/","path":"2024/05/19/一种侧面展开图求法/","title":"一种侧面展开图求法"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>一元三次方程的解法 | Dark-mo</title>
+<title>一种侧面展开图求法 | Dark-mo</title>
   
 
 
@@ -127,7 +138,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -140,6 +151,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87"><span class="nav-number">1.</span> <span class="nav-text">前期准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E6%9E%90"><span class="nav-number">2.</span> <span class="nav-text">分析</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -198,7 +210,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://dark-mo.github.io/2024/03/30/%E4%B8%80%E5%85%83%E4%B8%89%E6%AC%A1%E6%96%B9%E7%A8%8B%E7%9A%84%E8%A7%A3%E6%B3%95/">
+    <link itemprop="mainEntityOfPage" href="https://dark-mo.github.io/2024/05/19/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/logo.jpg">
@@ -211,12 +223,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="一元三次方程的解法 | Dark-mo">
+      <meta itemprop="name" content="一种侧面展开图求法 | Dark-mo">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          一元三次方程的解法
+          一种侧面展开图求法
         </h1>
 
         <div class="post-meta-container">
@@ -226,15 +238,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2024-03-30 22:54:52" itemprop="dateCreated datePublished" datetime="2024-03-30T22:54:52+08:00">2024-03-30</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-05-19 23:42:50" itemprop="dateModified" datetime="2024-05-19T23:42:50+08:00">2024-05-19</time>
+      <time title="创建时间：2024-05-19 23:40:58 / 修改时间：23:45:06" itemprop="dateCreated datePublished" datetime="2024-05-19T23:40:58+08:00">2024-05-19</time>
     </span>
 
   
@@ -243,7 +249,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>107</span>
+      <span>645</span>
     </span>
 </div>
 
@@ -253,10 +259,42 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>在了解复数之前，我们最好对复数的起源之处，即一元三次方程的求根公式有所了解。查找了大量资料后，我找到了下面这个视频。</p>
-<iframe src="//player.bilibili.com/player.html?aid=69358429&bvid=BV1nE411R72b&cid=120206879&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
-<p><strong>视频转载于 : <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1nE411R72b">https://www.bilibili.com/video/BV1nE411R72b</a></strong></p>
+    <div class="post-body" itemprop="articleBody"><p>题目：<br>一个圆柱，按如图所示的方式切割，下半部分几合体的侧面展开图是什么？</p>
+<p><img src="/images/一种侧面展开图求法/1.png" alt=""></p>
+<span id="more"></span>
+<h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><p>首先建立如图所示的坐标系</p>
+<p><img src="/images/一种侧面展开图求法/1.png" alt=""></p>
+<p>其次，建立一个垂直与圆柱底面的平面，且与底面的交线与y轴垂直。<br>并使之从左往右扫过</p>
+<p><img src="/images/一种侧面展开图求法/2.png" alt=""></p>
+<p><img src="/images/一种侧面展开图求法/3.png" alt=""></p>
+<p><img src="/images/一种侧面展开图求法/4.png" alt=""></p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>1.定性分析</p>
+<p>(1)关注侧面<br>在从左往右匀速扫的过程中，随着y轴上数值的匀速增加，z轴上的数值匀速增加。</p>
+<p>(2)关注底面<br>设竖直平面与底面圆的交点中处在x轴非负半轴的交点为P<br>在从左往右匀速扫的过程中，随着y轴上数值的匀速增加，P点移动的速度先快后慢再快，且易得在如图所示的位置速度最慢。</p>
+<p><img src="/images/一种侧面展开图求法/3.png" alt=""></p>
+<p>(3)得出侧面展开图图像</p>
+<p>因为在从左往右匀速扫的过程中，随着y轴上数值的匀速增加，P点移动的速度先快后慢再快</p>
+<p>所以若P点匀速移动，则y轴上的数值先慢后快再慢。</p>
+<p>因为随着y轴上数值的匀速增加，z轴上的数值匀速增加。</p>
+<p>所以若P点匀速移动，则z轴上的数值先慢后快再慢，对应图像的斜率起初很小，然后逐渐变大，最后逐渐变小。</p>
+<p>而P点移动的路程即为侧面展开图的横轴，z轴上的数值即为侧面展开图的纵轴。</p>
+<p>所以可得出如下图图像</p>
+<p><img src="/images/一种侧面展开图求法/5.png" alt=""></p>
+<p>由对称性可知，P点运动到另一半圆时的侧面展开图图像与前一半对称，可得出完整图像</p>
+<p>2.定量分析</p>
+<p>建立一个平面直角坐标系并作出圆柱底面圆（假设半径为1）</p>
+<p>设OP连线与横轴非负半轴所呈的最小正角为α,P点移动的路程为x,z轴上的数值为y</p>
+<p><img src="/images/一种侧面展开图求法/6.png" alt=""></p>
+<p>易得出</p>
+<p>x = α - π</p>
+<p>y = k * cos(α) + b</p>
+<p>所以 y = k * cos(x + π) + b</p>
+<p>所以y = -k * cos(x) + b</p>
+<p>由题意可知，图线过(0, 0), (π, h) 两点，得 k = b = h / 2</p>
+<p>这里假设h = 6</p>
+<p>即可可得出如下图图像</p>
+<p><img src="/images/一种侧面展开图求法/5.png" alt=""></p>
+<p>完结</p>
 
     </div>
 
@@ -274,7 +312,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://dark-mo.github.io/2024/03/30/%E4%B8%80%E5%85%83%E4%B8%89%E6%AC%A1%E6%96%B9%E7%A8%8B%E7%9A%84%E8%A7%A3%E6%B3%95/" title="一元三次方程的解法">https://dark-mo.github.io/2024/03/30/一元三次方程的解法/</a>
+      <a href="https://dark-mo.github.io/2024/05/19/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/" title="一种侧面展开图求法">https://dark-mo.github.io/2024/05/19/一种侧面展开图求法/</a>
   </li>
   <li class="post-copyright-license">
       <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -284,21 +322,19 @@
 
           <div class="post-tags">
               <a href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag"># 数学</a>
-              <a href="/tags/%E6%96%B9%E7%A8%8B/" rel="tag"># 方程</a>
+              <a href="/tags/%E7%AB%8B%E4%BD%93%E5%87%A0%E4%BD%95/" rel="tag"># 立体几何</a>
+              <a href="/tags/%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/" rel="tag"># 解析几何</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2024/03/23/%E6%9F%90%E7%A7%8D%E9%81%97%E4%BC%A0%E8%A7%84%E5%BE%8B%E8%AF%81%E6%98%8E/" rel="prev" title="某种遗传规律证明">
-                  <i class="fa fa-chevron-left"></i> 某种遗传规律证明
+                <a href="/2024/03/30/%E4%B8%80%E5%85%83%E4%B8%89%E6%AC%A1%E6%96%B9%E7%A8%8B%E7%9A%84%E8%A7%A3%E6%B3%95/" rel="prev" title="一元三次方程的解法">
+                  <i class="fa fa-chevron-left"></i> 一元三次方程的解法
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2024/05/19/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/" rel="next" title="一种侧面展开图求法">
-                  一种侧面展开图求法 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
@@ -377,7 +413,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
 
-<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"Dark-mo","repo":"dark-mo.github.io","client_id":"39650407ca72bd0817ee","client_secret":"b5c86cf9dc98d9f1c60d281dafda36afc76bf25f","admin_user":"Dark-mo","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":"zh-CN","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"ddeb66e9dc3af760006f433d3fdcac4d"}</script>
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"Dark-mo","repo":"dark-mo.github.io","client_id":"39650407ca72bd0817ee","client_secret":"b5c86cf9dc98d9f1c60d281dafda36afc76bf25f","admin_user":"Dark-mo","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":"zh-CN","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"3e877f19725154d0d09f0668b20a563a"}</script>
 <script src="/js/third-party/comments/gitalk.js"></script>
 
 </body>
