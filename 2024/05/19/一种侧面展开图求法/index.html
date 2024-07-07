@@ -17,24 +17,24 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"dark-mo.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.17.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-1}},"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dark.mo.cn","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.17.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-1}},"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="题目：一个圆柱，按如图所示的方式切割，下半部分几合体的侧面展开图是什么？">
 <meta property="og:type" content="article">
 <meta property="og:title" content="一种侧面展开图求法">
-<meta property="og:url" content="https://dark-mo.github.io/2024/05/19/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/index.html">
+<meta property="og:url" content="https://dark.mo.cn/2024/05/19/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/index.html">
 <meta property="og:site_name" content="Dark-mo">
 <meta property="og:description" content="题目：一个圆柱，按如图所示的方式切割，下半部分几合体的侧面展开图是什么？">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://dark-mo.github.io/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/1.png">
-<meta property="og:image" content="https://dark-mo.github.io/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/1.png">
-<meta property="og:image" content="https://dark-mo.github.io/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/2.png">
-<meta property="og:image" content="https://dark-mo.github.io/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/3.png">
-<meta property="og:image" content="https://dark-mo.github.io/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/4.png">
-<meta property="og:image" content="https://dark-mo.github.io/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/3.png">
-<meta property="og:image" content="https://dark-mo.github.io/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/5.png">
-<meta property="og:image" content="https://dark-mo.github.io/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/6.png">
-<meta property="og:image" content="https://dark-mo.github.io/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/5.png">
+<meta property="og:image" content="https://dark.mo.cn/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/1.png">
+<meta property="og:image" content="https://dark.mo.cn/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/1.png">
+<meta property="og:image" content="https://dark.mo.cn/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/2.png">
+<meta property="og:image" content="https://dark.mo.cn/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/3.png">
+<meta property="og:image" content="https://dark.mo.cn/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/4.png">
+<meta property="og:image" content="https://dark.mo.cn/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/3.png">
+<meta property="og:image" content="https://dark.mo.cn/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/5.png">
+<meta property="og:image" content="https://dark.mo.cn/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/6.png">
+<meta property="og:image" content="https://dark.mo.cn/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/5.png">
 <meta property="article:published_time" content="2024-05-19T15:40:58.000Z">
 <meta property="article:modified_time" content="2024-05-22T15:27:52.881Z">
 <meta property="article:author" content="赵子墨">
@@ -42,14 +42,14 @@
 <meta property="article:tag" content="立体几何">
 <meta property="article:tag" content="解析几何">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://dark-mo.github.io/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/1.png">
+<meta name="twitter:image" content="https://dark.mo.cn/images/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/1.png">
 
 
-<link rel="canonical" href="https://dark-mo.github.io/2024/05/19/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/">
+<link rel="canonical" href="https://dark.mo.cn/2024/05/19/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://dark-mo.github.io/2024/05/19/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/","path":"2024/05/19/一种侧面展开图求法/","title":"一种侧面展开图求法"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://dark.mo.cn/2024/05/19/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/","path":"2024/05/19/一种侧面展开图求法/","title":"一种侧面展开图求法"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>一种侧面展开图求法 | Dark-mo</title>
@@ -210,7 +210,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://dark-mo.github.io/2024/05/19/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/">
+    <link itemprop="mainEntityOfPage" href="https://dark.mo.cn/2024/05/19/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/logo.jpg">
@@ -318,7 +318,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://dark-mo.github.io/2024/05/19/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/" title="一种侧面展开图求法">https://dark-mo.github.io/2024/05/19/一种侧面展开图求法/</a>
+      <a href="https://dark.mo.cn/2024/05/19/%E4%B8%80%E7%A7%8D%E4%BE%A7%E9%9D%A2%E5%B1%95%E5%BC%80%E5%9B%BE%E6%B1%82%E6%B3%95/" title="一种侧面展开图求法">https://dark.mo.cn/2024/05/19/一种侧面展开图求法/</a>
   </li>
   <li class="post-copyright-license">
       <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
